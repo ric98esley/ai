@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ai_mcp_ai_mcp,ai_mcp.ai_mcp,model_ai_mcp_ai_mcp,base.group_user,1,1,1,1
