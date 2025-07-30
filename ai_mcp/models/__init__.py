@@ -1,1 +1,1 @@
-from . import models
+from . import ai_mcp_permissions

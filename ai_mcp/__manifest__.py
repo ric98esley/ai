@@ -12,7 +12,8 @@
     "version": "18.0.1.0.0",
     "depends": ["base"],
     "data": [
-        # 'security/ir.model.access.csv',
+        "views/ai_mcp_model_permission_views.xml",
+        "security/ir.model.access.csv"
     ],
     "installable": True,
 }
