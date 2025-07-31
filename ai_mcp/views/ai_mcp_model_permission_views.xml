@@ -6,7 +6,7 @@
         <field name="name">view.ai_mcp.model_permission.list</field>
         <field name="model">ai_mcp.model_permission</field>
         <field name="arch" type="xml">
-            <list string="Ai mcp Model permission" create="true">
+            <list string="Ai mcp Model permission" create="true" editable="bottom">
                 <field name="user_id"/>
                 <field name="model_id"/>
                 <field name="model_name"/>

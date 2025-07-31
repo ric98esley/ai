@@ -36,7 +36,7 @@ class ModelPermission(models.Model):
     model_display_name = fields.Char(
         related='model_id.name', 
         string='Model Display Name', 
-        store=True,
+        store=False,
         help='Human readable name of the model'
     )
     
@@ -129,7 +129,8 @@ class ModelPermission(models.Model):
         """Custom name display for the record."""
         result = []
         for record in self:
-            name = f"{record.user_id.name} - {record.model_display_name}"
+            model_name = record.model_display_name or record.model_name or 'Unknown Model'
+            name = f"{record.user_id.name} - {model_name}"
             if record.permission_summary:
                 name += f" ({record.permission_summary})"
             result.append((record.id, name))

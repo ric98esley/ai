@@ -13,6 +13,7 @@
     "depends": ["base"],
     "data": [
         "views/ai_mcp_model_permission_views.xml",
+        "views/res_user_views.xml",
         "security/ir.model.access.csv"
     ],
     "installable": True,
